@@ -20,4 +20,8 @@ describe('Caesar Cypher', () => {
     test('Encrypt a word with upper and lower cases', () => 
         expect(caesarCypher('AbuBle', 1)).toBe('BcvCmf')
     )
+
+    test('Check if there the field is empty', () =>
+        expect(caesarCypher('', 5)).toBe("It's empty")
+    )
 })

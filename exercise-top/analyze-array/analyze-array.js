@@ -7,6 +7,4 @@ function analyzeArray(array) {
     return { average, min, max, length }
 }
 
-console.log(analyzeArray([2, 4, 5, 6, 7, 90, 1, 11, 34]))
-
 module.exports = analyzeArray

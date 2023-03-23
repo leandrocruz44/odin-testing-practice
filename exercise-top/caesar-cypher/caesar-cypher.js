@@ -31,6 +31,7 @@ function changeIndex(letter, shift) {
 }
 
 function caesarCypher(string, shift) {
+    if (string.length === 0) return "It's empty"
     let encrypted = []
     for (let i = 0; i < string.length; i++) {
         encrypted.push(changeIndex(string[i], shift))
@@ -39,6 +40,3 @@ function caesarCypher(string, shift) {
 }
 
 module.exports = caesarCypher
-
-
-console.log(caesarCypher('masayoshi', -6))
